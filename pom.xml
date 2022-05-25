@@ -10,8 +10,8 @@
     <packaging>war</packaging>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>16.0.1</maven.compiler.source>
+        <maven.compiler.target>16.0.1</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -31,14 +31,14 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
-                    <url>http://localhost:8081/manager/text</url>
+                    <url>http://localhost:8080/manager/text</url>
                     <username>admin</username>
                     <password>12345</password>
                 </configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.3.1</version>
+                <version>3.3.2</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
